@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+//provide database link for mongodb atlas
 const dbUrl = process.env.DB_URL
 //process.env.DATABASE
 mongoose
