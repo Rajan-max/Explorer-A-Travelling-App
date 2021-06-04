@@ -1,5 +1,11 @@
 <% layout('layouts/boilerplate')%>
 
+<% var today = new Date(); %>
+<% var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(); %>
+<% var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(); %>
+<% var dateTime = date+' '+time; %>
+
+
 <div class="row">
     <div class="col-6">
         <div id="campgroundCarousel" class="carousel slide" data-ride="carousel">
@@ -41,8 +47,9 @@
                 </form>
             </div>
             <% } %>
+
             <div class="card-footer text-muted">
-                2 days ago
+                <%= dateTime %> 
             </div>
         </div>
 
