@@ -9,7 +9,7 @@ module.exports.addReview = async (req, res) => {
 	await review.save()
 	await campground.save()
 	req.flash('success', 'Thanks For Your Contribution!Successfully Added!')
-	res.redirect(`/campgrounds/${campground._id}`)  //Rendering the particular routes with id
+	res.redirect(`/campgrounds/${campground._id}`)  //Rendering the particular routes with ID
 }
 
 module.exports.deleteReview = async (req, res) => {
