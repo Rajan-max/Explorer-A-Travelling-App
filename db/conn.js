@@ -14,5 +14,5 @@ mongoose
 		console.log('DB Connection Successful')
 	})
 	.catch(() => {
-		console.log('DB Connection Failed')
+		console.log('DB Connection Failed') //If the db doesnot connect
 	})
